@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> TARUN BHAI </title>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1388895913057411');
+fbq('track', 'PageView');
+</script>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1388895913057411 okok&ev=PageView&noscript=1"/>
+</noscript>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f2f2f2;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+.card{
+width:100%;
+max-width:420px;
+background:#fff;
+border-radius:30px;
+padding:30px 20px;
+text-align:center;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.profile{
+width:150px;
+height:150px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid red;
+margin-bottom:20px;
+}
+
+.title{
+font-size:28px;
+font-weight:800;
+color:#111;
+margin-bottom:25px;
+line-height:1.3;
+}
+
+.telegram-btn{
+display:block;
+width:100%;
+padding:18px;
+background:#1565c0;
+color:#fff;
+text-decoration:none;
+font-size:22px;
+font-weight:700;
+border-radius:50px;
+margin:20px 0;
+}
+
+.telegram-btn:hover{
+opacity:.95;
+}
+
+.countdown{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:10px;
+margin:25px 0;
+}
+
+.box{
+background:#fafafa;
+border-radius:15px;
+padding:15px 5px;
+border:1px solid #eee;
+}
+
+.num{
+font-size:32px;
+font-weight:800;
+color:#ff3366;
+}
+
+.label{
+font-size:11px;
+font-weight:700;
+color:#d600ff;
+margin-top:5px;
+}
+
+.footer{
+margin-top:20px;
+font-size:18px;
+font-weight:700;
+}
+
+.footer span{
+color:#ff3366;
+}
+
+@media(max-width:480px){
+
+.title{
+font-size:24px;
+}
+
+.telegram-btn{
+font-size:18px;
+padding:16px;
+}
+
+.num{
+font-size:26px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<img
+class="profile"
+src="https://d1yei2z3i6k35z.cloudfront.net/17601983/6a2f73e6c35a76.09923419_1949.jpg"
+alt="Profile">
+
+<h1 class="title">
+‼️ BDG ANASLISY ‼️
+</h1>
+
+<a
+class="telegram-btn"
+href="https://t.me/+oVkM_oAy_Eg0MzRl"
+onclick="fbq('track','Lead');">
+✈️ Join Telegram 
+</a>
+
+<div class="countdown">
+
+<div class="box">
+<div class="num">00</div>
+<div class="label">DAYS</div>
+</div>
+
+<div class="box">
+<div class="num">00</div>
+<div class="label">HOURS</div>
+</div>
+
+<div class="box">
+<div class="num">00</div>
+<div class="label">MINUTES</div>
+</div>
+
+<div class="box">
+<div class="num" id="seconds">15</div>
+<div class="label">SECONDS</div>
+</div>
+
+</div>
+
+<a
+class="telegram-btn"
+href="https://t.me/+oVkM_oAy_Eg0MzRl"
+onclick="fbq('track','Lead');">
+✈️ Join telegram 
+</a>
+
+
+</div>
+
+</div>
+
+<script>
+
+let sec = 15;
+
+const timer = setInterval(() => {
+
+document.getElementById("seconds").innerText =
+String(sec).padStart(2,"0");
+
+sec--;
+
+if(sec < 0){
+
+clearInterval(timer);
+
+window.location.href =
+"https://t.me/+oVkM_oAy_Eg0MzRl";
+
+}
+
+},1000);
+
+</script>
+
+</body>
+</html>
